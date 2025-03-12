@@ -5,119 +5,131 @@ import "./PriceList.scss";
 
 const pricesFrizerie = [
   {
-    name: "Tuns Clasic",
+    name: "Pachet tuns aranjat și Barbă",
     spacer: "......................",
-    price: "70 RON",
+    price: "100 RON",
   },
   {
-    name: "Tuns Fade",
-    spacer: "......................",
-    price: "80 RON",
-  },
-  {
-    name: "Tuns din Foarfecă",
-    spacer: "......................",
-    price: "80 RON",
-  },
-  {
-    name: "Pachet tuns și Barbă",
+    name: "Tuns SkinFade si Aranjat",
     spacer: "......................",
     price: "90 RON",
+  },
+  {
+    name: "Tuns Clasic și Aranjat",
+    spacer: "......................",
+    price: "80 RON",
+  },
+  {
+    name: "Tuns Copil",
+    spacer: "......................",
+    price: "80 RON",
+  },
+  {
+    name: "Tuns Zero",
+    spacer: "......................",
+    price: "40 RON",
   },
   {
     name: "Tuns Barbă",
     spacer: "......................",
     price: "30 RON",
   },
-  {
-    name: "Spălat",
-    spacer: "......................",
-    price: "10 RON",
-  },
 ];
 const pricesCoafor = [
   {
-    name: "Pachet Tuns",
+    name: "Pachet Tuns Schimbare Formă",
+    spacer: "......................",
+    price: "200 RON",
+  },
+  {
+    name: "Pachet Tuns Intreținere Formă",
     spacer: "......................",
     price: "150 RON",
   },
   {
-    name: "Coafat - Păr Scurt",
-    spacer: "......................",
-    price: "80 RON",
-  },
-  {
-    name: "Coafat Drept",
+    name: "Tuns Copil",
     spacer: "......................",
     price: "100 RON",
   },
   {
-    name: "Coafat Bucle",
+    name: "Tuns Breton",
     spacer: "......................",
-    price: "120 RON",
+    price: "40 RON",
   },
   {
-    name: "Coafat Ocazie",
+    name: "Spalat Capilar",
     spacer: "......................",
     price: "250 RON",
   },
   {
     name: "Coafat - Mireasă",
     spacer: "......................",
-    price: "250 - 500 RON",
+    price: "300 - 550 RON",
   },
   {
-    name: "Vopsit Total",
+    name: "Coafat de Ocazie",
     spacer: "......................",
-    price: "300 - 450 RON",
+    price: "200 - 350 RON",
   },
   {
-    name: "Vopsit Suvițe",
+    name: "Coafat Bucle Păr Lung",
     spacer: "......................",
-    price: "400 - 700 RON",
+    price: "150 RON",
   },
   {
-    name: "Decolorat",
-    spacer: "......................",
-    price: "600 - 900 RON",
-  },
-  {
-    name: "Balayage",
-    spacer: "......................",
-    price: "1000 - 1700 RON",
-  },
-];
-
-const priceManichiura = [
-  {
-    name: "Manichiură Clasică",
-    spacer: "......................",
-    price: "60 RON",
-  },
-  {
-    name: "Pedichiură Clasică",
-    spacer: "......................",
-    price: "70 RON",
-  },
-  {
-    name: "Manichiură cu ojă Semipermanentă",
+    name: "Coafat Bucle Păr Mediu",
     spacer: "......................",
     price: "120 RON",
   },
   {
-    name: "Pedichiură cu ojă Semipermanentă",
+    name: "Coafat Drept Păr Lung",
     spacer: "......................",
-    price: "130 RON",
+    price: "120 RON",
   },
   {
-    name: "Îndepărtat Semipermanentă",
+    name: "Coafat Drept Păr Mediu",
     spacer: "......................",
-    price: "30 RON",
+    price: "100 RON",
   },
   {
-    name: "Îndepărtat Gel",
+    name: "Coafat Păr Scurt",
     spacer: "......................",
-    price: "40 RON",
+    price: "100 RON",
+  },
+  {
+    name: "Tratament Hidratare și Reparare",
+    spacer: "......................",
+    price: "250 RON",
+  },
+  {
+    name: "Vopsit Balayage",
+    spacer: "......................",
+    price: "1000 - 1700 RON",
+  },
+  {
+    name: "Decolorat și Revopsit Total",
+    spacer: "......................",
+    price: "700 - 1300 RON",
+  },
+  {
+    name: "Decolorat și Revopsit Rădăcină",
+    spacer: "......................",
+    price: "700 - 1300 RON",
+  },
+  {
+    name: "Vopsit Șuvițe",
+    spacer: "......................",
+    price: "400 - 700 RON",
+  },
+  {
+    name: "Vopsit Clasic",
+    spacer: "......................",
+    price: "300 - 450 RON",
+  },
+  {
+    name: "Nuanțat Culoare",
+    spacer: "......................",
+    price: "250 RON",
   },
 ];
 
@@ -142,19 +154,6 @@ const PriceList = () => {
       <table>
         <tbody>
           {pricesCoafor.map((price) => (
-            <tr key={price.name}>
-              <td>{price.name}</td>
-              <td>{price.spacer}</td>
-              <td>{price.price}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
-      <div className="price-name">Manichiură & Pedichiură</div>
-      <table>
-        <tbody>
-          {priceManichiura.map((price) => (
             <tr key={price.name}>
               <td>{price.name}</td>
               <td>{price.spacer}</td>
