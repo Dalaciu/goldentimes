@@ -5,7 +5,7 @@ import "./PriceList.scss";
 
 const pricesFrizerie = [
   {
-    name: "Pachet tuns aranjat și Barbă",
+    name: "Pachet Tuns Aranjat și Barbă",
     spacer: "......................",
     price: "100 RON",
   },
@@ -59,7 +59,7 @@ const pricesCoafor = [
   {
     name: "Spalat Capilar",
     spacer: "......................",
-    price: "250 RON",
+    price: "20 RON",
   },
   {
     name: "Coafat - Mireasă",
