@@ -12,7 +12,7 @@ const IndicatiiMaps = () => {
       <div className="maps-first-block">
         <div className="maps-block">
           <div className="maps-name">Adresa noastră</div>
-          <div className="maps-text">Profesor Emil Honoriu nr. 22C, Iași</div>
+          <div className="maps-text">Bulevardul Socola nr. 14</div>
           <a href="https://www.google.com/maps/place/Golden+Times+Salon+de+%C3%8Enfrumuse%C8%9Bare/@47.1329472,27.5655852,16.98z/data=!4m5!3m4!1s0x40cafba6e074d399:0xc5b8cd7f2c7578fa!8m2!3d47.1329495!4d27.5678043">
             <div
               className="maps-button"
@@ -52,5 +52,5 @@ const IndicatiiMaps = () => {
       <Footer />
     </div>
   );
-}
+};
 export default IndicatiiMaps;
